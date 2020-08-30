@@ -10,4 +10,12 @@ public class Library {
             booksAvailable[i] = new Book();
         }
     }
+
+    public Book[] getBooksAvailable() {
+        return booksAvailable.clone();
+    }
+
+    public void setBooksAvailable(Book[] booksAvailable) {
+        this.booksAvailable = booksAvailable;
+    }
 }
