@@ -78,5 +78,8 @@ public class Student {
         return Objects.hash(getBooksIssued());
     }
 
+    public void returnBook() {
+        System.out.println("Book returned successfully");
+    }
 
 }
