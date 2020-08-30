@@ -47,14 +47,16 @@ public class Book {
         System.out.println("Thank you for issuing the \"" + getBookName() + "\".");
     }
 
+    @Override
     public String toString() {
         return "Book Name: " + getBookName() + ", " +
                 "Author Name: " + getAuthorName() + ", " +
                 "ISBN Code: " + getISBNCode() + ".";
     }
 
+    @Override
     public boolean equals(Object o) {
-        if (this == o) { // we are comparing the references (references value) of the objects
+        if (this == o) {
             return true;
         }
         if (o == null || getClass() != o.getClass()) {
@@ -64,6 +66,11 @@ public class Book {
         return getBookName() == book.getBookName() &&
                 getAuthorName() == book.getAuthorName() &&
                 Objects.equals(getBookName(), book.getBookName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), getAuthorName(), getISBNCode());
     }
 
 
