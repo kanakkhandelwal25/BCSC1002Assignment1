@@ -6,7 +6,7 @@ public class Student {
     private String studentName;
     private long rollNumber;
     private int noOfBooksIssued;
-    private String[] booksIssued;
+    private Book[] booksIssued;
 
     public Student(String studentName, long rollNumber) {
         this.studentName = studentName;
@@ -36,8 +36,13 @@ public class Student {
                 "Roll Number: " + getRollNumber() + ".";
     }
 
-    public String[] getBooksIssued() {
+    public Book[] getBooksIssued() {
         return booksIssued.clone();
     }
+
+    public void setBooksIssued(Book[] booksIssued) {
+        this.booksIssued = booksIssued;
+    }
+
 
 }
