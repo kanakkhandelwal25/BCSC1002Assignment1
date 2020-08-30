@@ -36,4 +36,8 @@ public class Student {
                 "Roll Number: " + getRollNumber() + ".";
     }
 
+    public String[] getBooksIssued() {
+        return booksIssued.clone();
+    }
+
 }
