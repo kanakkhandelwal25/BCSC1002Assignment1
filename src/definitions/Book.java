@@ -41,4 +41,8 @@ public class Book {
         this.ISBNCode = ISBNCode;
     }
 
+    public void issueBook() {
+        System.out.println("Thank you for issuing the \"" + getBookName() + "\".");
+    }
+
 }
