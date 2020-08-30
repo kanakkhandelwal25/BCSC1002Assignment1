@@ -73,5 +73,9 @@ public class Book {
         return Objects.hash(getBookName(), getAuthorName(), getISBNCode());
     }
 
+    public void issueTheBook() {
+        System.out.println("Book issued successfully");
+    }
+
 
 }
