@@ -13,4 +13,13 @@ public class Student {
         this.rollNumber = rollNumber;
     }
 
+    public String getStudentName() {
+        return studentName;
+    }
+
+
+    public long getRollNumber() {
+        return rollNumber;
+    }
+
 }
