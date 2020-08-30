@@ -45,4 +45,10 @@ public class Book {
         System.out.println("Thank you for issuing the \"" + getBookName() + "\".");
     }
 
+    public String toString() {
+        return "Book Name: " + getBookName() + ", " +
+                "Author Name: " + getAuthorName() + ", " +
+                "ISBN Code: " + getISBNCode() + ".";
+    }
+
 }
