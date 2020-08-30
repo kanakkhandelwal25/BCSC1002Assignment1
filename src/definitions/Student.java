@@ -2,6 +2,7 @@
 package definitions;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
 
@@ -70,6 +71,11 @@ public class Student {
         }
         Student book = (Student) o;
         return Arrays.equals(getBooksIssued(), book.getBooksIssued());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBooksIssued());
     }
 
 
