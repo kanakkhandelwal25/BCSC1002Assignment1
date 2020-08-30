@@ -1,6 +1,8 @@
 
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
 
     private String studentName;
@@ -49,6 +51,13 @@ public class Student {
         for (int i = 0; i < booksIssued.length; i++) {
             booksIssued[i] = new Book();
         }
+    }
+
+    /**
+     * @return name of the books issued
+     */
+    public String booksIssued() {
+        return Arrays.toString(booksIssued);
     }
 
 
