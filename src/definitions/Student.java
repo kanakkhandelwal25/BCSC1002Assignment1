@@ -60,5 +60,17 @@ public class Student {
         return Arrays.toString(booksIssued);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Student book = (Student) o;
+        return Arrays.equals(getBooksIssued(), book.getBooksIssued());
+    }
+
 
 }
