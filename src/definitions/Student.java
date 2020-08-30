@@ -44,5 +44,12 @@ public class Student {
         this.booksIssued = booksIssued;
     }
 
+    public Student() {
+        this.booksIssued = new Book[5];
+        for (int i = 0; i < booksIssued.length; i++) {
+            booksIssued[i] = new Book();
+        }
+    }
+
 
 }
