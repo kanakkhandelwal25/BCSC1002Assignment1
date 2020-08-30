@@ -1,5 +1,7 @@
 package definitions;
 
+import java.util.Objects;
+
 public class Book {
     private String bookName;
     private String authorName;
@@ -50,5 +52,19 @@ public class Book {
                 "Author Name: " + getAuthorName() + ", " +
                 "ISBN Code: " + getISBNCode() + ".";
     }
+
+    public boolean equals(Object o) {
+        if (this == o) { // we are comparing the references (references value) of the objects
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Book book = (Book) o;
+        return getBookName() == book.getBookName() &&
+                getAuthorName() == book.getAuthorName() &&
+                Objects.equals(getBookName(), book.getBookName());
+    }
+
 
 }
