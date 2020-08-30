@@ -1,6 +1,8 @@
 
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] booksAvailable;
 
@@ -17,5 +19,12 @@ public class Library {
 
     public void setBooksAvailable(Book[] booksAvailable) {
         this.booksAvailable = booksAvailable;
+    }
+
+    /**
+     * @return name of the available books
+     */
+    public String booksAvailable() {
+        return Arrays.toString(booksAvailable);
     }
 }
