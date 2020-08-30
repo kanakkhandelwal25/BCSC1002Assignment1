@@ -17,9 +17,17 @@ public class Student {
         return studentName;
     }
 
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
 
     public long getRollNumber() {
         return rollNumber;
+    }
+
+    public void setRollNumber(long rollNumber) {
+        this.rollNumber = rollNumber;
     }
 
 }
